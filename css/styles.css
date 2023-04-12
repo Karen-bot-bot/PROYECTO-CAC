@@ -18,9 +18,21 @@
   justify-content: flex-end;
 }
 
+.container-fluid {
+  margin: 0 30px;
+}
+
 @media (max-width: 768px) {
   .collapse {
     display: block;
+    text-align: center;
+  }
+  .container-fluid {
+    margin: 0;
+  }
+  .nav-link,
+  .text-succces {
+    margin-bottom: 20px;
   }
 }
 
@@ -37,8 +49,8 @@
   height: 100vh;
   background-image: linear-gradient(
       to right,
-      #43434380 0%,
-      rgba(0, 0, 0, 0.466) 100%
+      #00000071 0%,
+      rgba(0, 0, 0, 0.493) 100%
     ),
     url(/img/ba1.jpg);
   background-size: cover;
@@ -47,7 +59,7 @@
 }
 
 .container {
-  width: 40%;
+  width: 45%;
   flex-direction: column;
   text-align: right;
   color: white;
@@ -55,10 +67,17 @@
   margin-top: 20%;
 }
 
+.parrafo {
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
-    margin: 40% 0;
+    margin: 40% auto;
     padding: 0 20px;
+  }
+  .parrafo {
+    font-size: 16px;
   }
 }
