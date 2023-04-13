@@ -21,39 +21,107 @@
                 <span class="brand-text d-none d-lg-inline-block">Conf Bs As</span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler border-light focus-ring focus-ring-light" type="button" data-bs-theme="dark"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a>
+                        <a href="#Conferencia" class="nav-link active text-white ms-2 text-center" aria-current="page"
+                            href="#">La
+                            conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a href="#Oradores" class="nav-link ms-2 text-center" href="#">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a href="#Honolulu" class="nav-link ms-2 text-center" href="#">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviértete en orador</a>
+                        <a class="nav-link ms-2 text-center" href="#">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-success" href="#">Comprar tickets</a>
+                        <a class="nav-link text-success ms-2 text-center" href="#">Comprar tickets</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="header">
+    <header class="header" id="Conferencia">
         <div class="container d-flex">
             <h1 class="title"> Conf. Bs As</h1>
-            <p class="parrafo">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+            <p class="parrafo">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad
+                el conocimiento y experiencia de de los expertos que están creando el futuro de Internet. Ven a conocer
+                a miembros del evento a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos
+                para ti. Te esperamos!</p>
+            <div>
+                <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+                <button type="button" class="btn btn-success">Comprar tickets</button>
+            </div>
         </div>
     </header>
+
+    <section class="oradores" id="Oradores">
+        <div>
+            <p class="parrafo_1 text-center mt-1 mb-0">CONOCE A LOS</p>
+            <h2 class="oradores text-center">ORADORES</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mx-0 mt-0 mb-4 justify-content-center">
+            <div class="col w-25">
+                <div class="card h-100">
+                    <div><img src="/img/steve.jpg" class="img card-img-top" alt="steve-jobs"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+                            earum dolor itaque laboriosam corporis illum aliquid quisquam consequatur voluptatum
+                            quos commodi velit nam! Quae animi maiores enim aut eius reiciendis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25">
+                <div class="card h-100">
+                    <div><img src="/img/bill.jpg" class="card-img-top" alt="bill-gates"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+                            earum dolor itaque laboriosam corporis illum aliquid quisquam consequatur voluptatum
+                            quos commodi velit nam! Quae animi maiores enim aut eius reiciendis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col w-25">
+                <div class="card h-100">
+                    <div><img src="/img/ada.jpeg" class="card-img-top" alt="ada-lovelace"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
+                            earum dolor itaque laboriosam corporis illum aliquid quisquam consequatur voluptatum
+                            quos commodi velit nam! Quae animi maiores enim aut eius reiciendis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="honolulu" id="Honolulu">
+        <div class="container-1">
+            <img class="imagen-honolulu" src="/img/honolulu.jpg" alt="playa">
+            <div class="container-2">
+                <h2 class="">Bs As - Octubre</h2>
+                <p class="parrafo_2">Buenos Aires es la provincia y localidad más grande de Argentina. En los Estados
+                    Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el
+                    nombre de Honolulu se refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el
+                    condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad
+                    (aproximadamente 600km2 de superficie).
+                </p>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

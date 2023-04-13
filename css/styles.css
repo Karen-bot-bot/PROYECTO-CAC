@@ -11,22 +11,14 @@
   top: 0;
   right: 0;
   left: 0;
-}
-
-.collapse {
-  display: flex;
-  justify-content: flex-end;
+  z-index: 1000;
 }
 
 .container-fluid {
   margin: 0 30px;
 }
 
-@media (max-width: 768px) {
-  .collapse {
-    display: block;
-    text-align: center;
-  }
+@media (max-width: 992px) {
   .container-fluid {
     margin: 0;
   }
@@ -71,13 +63,82 @@
   font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .header {
+    height: 100vh;
+  }
+
   .container {
     width: 100%;
-    margin: 40% auto;
+    margin-top: 40vh;
+    margin-right: 5%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 40vh;
     padding: 0 20px;
   }
   .parrafo {
     font-size: 16px;
   }
+
+  .row {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .card {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .col {
+    padding: 0;
+  }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .row {
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: space-around !important;
+  }
+
+  .col {
+    width: 30% !important;
+    padding: 0;
+  }
+}
+
+/*SECCIÓN 2*/
+.honolulu {
+  background: #353a40;
+  color: white;
+}
+
+.container-1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-2 {
+  text-align: left;
+  width: 50%;
+  margin: 20px;
+}
+
+.imagen-honolulu {
+  width: 50%;
+}
+
+
+
