@@ -69,7 +69,7 @@
 }
 
 .card-img-top {
-  object-fit: contain;
+  object-fit: cover;
 }
 
 /*SECCIÓN 2*/
@@ -98,6 +98,60 @@
   margin-right: 0;
 }
 
+/*Sección 3 "Formulario"*/
+.form {
+  width: 40rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.input {
+  border: 1px solid gainsboro;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 8px;
+  margin-bottom: 10px;
+}
+
+.form-name {
+  width: 48%;
+  margin-right: 10px;
+}
+
+.form-surname {
+  width: 48%;
+  margin-left: 10px;
+}
+
+.form-message {
+  max-width: 99.4%;
+  min-width: 99.4%;
+  min-height: 100px;
+  max-height: 100px;
+  margin-bottom: 0;
+  font-size: 18px;
+  padding-top: 6px;
+}
+
+.form-submit {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background: #96c93e;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-submit:hover {
+  background: #81ad35  ;
+}
+
+/*TODO: DISEÑO RESPONSIVO*/
+/*Header hasta tablets*/
 @media (max-width: 768px) {
   .header {
     height: 100vh;
@@ -111,9 +165,10 @@
   }
 }
 
+/*Header de tablets a portátiles*/
 @media (min-width: 768px) and (max-width: 992px) {
   .header {
-    height: 80vh;
+    height: 100vh;
   }
 
   .container {
@@ -122,12 +177,46 @@
     margin-right: 5%;
     padding: 0 20px;
   }
-
 }
 
-/*Sección 2 de celulares a tablets*/
-@media (max-width: 768px) {
+/*Sección 1 desde celulares a portátiles*/
+@media (min-width: 576px) and (max-width: 992px) {
+  .row {
+    width: 97vw;
+    margin: 0 auto;
+    justify-content: space-around !important;
+  }
 
+  .col {
+    width: 30% !important;
+    padding: 0;
+  }
+}
+
+/*Sección 1 "oradores" en celulares*/
+@media (max-width: 576px) {
+  .row {
+    display: block;
+  }
+
+  .card {
+    height: 12rem;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .col {
+    width: 22rem !important;
+    margin: 0 auto;
+  }
+
+  .card-img-top {
+    height: 15rem;
+  }
+}
+
+/*Sección 2 y formulario de celulares a tablets*/
+@media (max-width: 768px) {
   .container-1 {
     flex-direction: column;
     height: 100%;
@@ -155,40 +244,21 @@
   .boton {
     margin: 0 0 10px 20px;
   }
-}
+ 
+  /*Formulario*/
 
-/*Sección 1 en tablets y portátiles*/
-@media (min-width: 576px) and (max-width:768px) {
-  .row {
-    width: 97vw;
-    margin: 0 auto;
-    justify-content: space-around !important;
+  .form {
+    width: 90vw;
   }
 
-  .col {
-    width: 30% !important;
-    padding: 0;
-  }
-}
-
-/*Sección 1 oradores en celulares*/
-@media (max-width:576px) {
-  .row {
-    display: block;
+  .input, .form-name, .form-surname {
+    width: 100%;
+    margin: 0 10px 10px 0;
   }
 
-  .card {
-    height: 12rem;
-    justify-content: center;
-    margin-bottom: 20px;
+  .form-message{
+    width: 100%;
+    margin-right: 0;
   }
 
-  .col {
-    width: 22rem !important;
-    margin: 0 auto;
-  }
-
-  .card-img-top{
-    height: 15rem;
-  }
 }

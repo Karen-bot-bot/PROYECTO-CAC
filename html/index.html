@@ -67,20 +67,20 @@
 
     <section class="oradores" id="Oradores">
         <div>
-            <p class="parrafo_1 text-center mt-1 mb-0">CONOCE A LOS</p>
-            <h2 class="oradores text-center">ORADORES</h2>
+            <p class="text-center mt-1 mb-0 small">CONOCÉ A LOS</p>
+            <h2 class="text-center">ORADORES</h2>
         </div>
         <div class="row row-cols-1 row-cols-md-3 mt-0 mb-4 justify-content-center">
             <div class="col w-25">
                 <div class="card h-100">
                     <div><img src="/img/steve.jpg" class="card-img-top" alt="steve-jobs"></div>
                     <div class="card-body">
-                        <a class="bg-warning rat">JavaScript </a>
-                        <a> React </a>
+                        <span class="badge text-bg-warning">JavaScript</span>
+                        <span class="badge text-bg-primary">React</span>
                         <h5 class="card-title">Steve Jobs</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-                            earum dolor itaque laboriosam corporis illum aliquid quisquam consequatur voluptatum
-                            quos commodi velit nam! Quae animi maiores enim aut eius reiciendis.
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatibus
+                            perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique
+                            incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!
                         </p>
                     </div>
                 </div>
@@ -89,10 +89,12 @@
                 <div class="card h-100">
                     <div><img src="/img/bill.jpg" class="card-img-top" alt="bill-gates"></div>
                     <div class="card-body">
+                        <span class="badge text-bg-warning">JavaScript</span>
+                        <span class="badge text-bg-primary">React</span>
                         <h5 class="card-title">Bill Gates</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-                            earum dolor itaque laboriosam corporis illum aliquid quisquam consequatur voluptatum
-                            quos commodi velit nam! Quae animi maiores enim aut eius reiciendis.
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatibus
+                            perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique
+                            incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!
                         </p>
                     </div>
                 </div>
@@ -101,10 +103,12 @@
                 <div class="card h-100">
                     <div><img src="/img/ada.jpeg" class="card-img-top" alt="ada-lovelace"></div>
                     <div class="card-body">
+                        <span class="badge text-bg-secondary">Negocios</span>
+                        <span class="badge text-bg-danger">Startups</span>
                         <h5 class="card-title">Ada Lovelace</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam,
-                            earum dolor itaque laboriosam corporis illum aliquid quisquam consequatur voluptatum
-                            quos commodi velit nam! Quae animi maiores enim aut eius reiciendis.</p>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptatibus
+                            perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique
+                            incidunt? Ullam nobis beatae, corporis facilis veniam magni ratione!</p>
                     </div>
                 </div>
             </div>
@@ -124,6 +128,21 @@
                 <button type="button" class="boton btn btn-outline-light">Conocé más</button>
             </div>
         </div>
+    </section>
+
+    <section class="formulario" id="formulario">
+        <div>
+            <p class="text-center mt-1 mb-0 small">CONVIÉRTETE EN UN</p>
+            <h2 class="text-center">ORADOR</h2>
+            <p class="text-center mx-3 mt-2">Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar.</p>
+        </div>
+        <form class="form" action="">
+            <input type="text" placeholder="Nombre" class="form-name input">
+            <input type="text" placeholder="Apellido" class="form-surname input">
+            <textarea class="form-message input" placeholder="Sobre qué quieres hablar?"></textarea>
+            <p class=" text-start mt-0 small">Recuerda incluir un título para tu charla.</p>
+            <input type="submit" value="Enviar" class="form-submit">
+        </form>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
