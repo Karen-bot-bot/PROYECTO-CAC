@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*Navegador*/
@@ -16,16 +17,6 @@
 
 .container-fluid {
   margin: 0 30px;
-}
-
-@media (max-width: 992px) {
-  .container-fluid {
-    margin: 0;
-  }
-  .nav-link,
-  .text-succces {
-    margin-bottom: 20px;
-  }
 }
 
 .nav-link {
@@ -56,7 +47,7 @@
   text-align: right;
   color: white;
   margin-right: 5%;
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
 .parrafo {
@@ -147,10 +138,51 @@
 }
 
 .form-submit:hover {
-  background: #81ad35  ;
+  background: #81ad35;
+}
+
+/*Footer*/
+.footer {
+  background: #194057;
+  color: white;
+}
+
+.contenedor {
+  margin: 0 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-f {
+  font-size: 18px;
 }
 
 /*TODO: DISEÑO RESPONSIVO*/
+/*Navbar y footer*/
+@media (max-width: 992px) {
+  .container-fluid {
+    margin: 0;
+  }
+  .nav-link,
+  .text-succces {
+    margin-bottom: 20px;
+  }
+
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .text-f {
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 2px !important;
+  }
+}
+
 /*Header hasta tablets*/
 @media (max-width: 768px) {
   .header {
@@ -244,21 +276,23 @@
   .boton {
     margin: 0 0 10px 20px;
   }
- 
-  /*Formulario*/
+
+  /*Formulario*/ /*! Resolver el problema de responsive hasta 576px en formulario*/
 
   .form {
     width: 90vw;
+    margin: auto;
   }
 
-  .input, .form-name, .form-surname {
+  .input,
+  .form-name,
+  .form-surname {
     width: 100%;
     margin: 0 10px 10px 0;
   }
 
-  .form-message{
+  .form-message {
     width: 100%;
     margin-right: 0;
   }
-
 }
