@@ -169,6 +169,7 @@
     margin-bottom: 20px;
   }
 
+  /* footer */
   .contenedor {
     flex-direction: column;
     align-items: center;
@@ -179,7 +180,7 @@
   .text-f {
     font-size: 16px;
     margin-bottom: 0;
-    padding: 2px !important;
+    padding: 6px !important;
   }
 }
 
@@ -277,7 +278,7 @@
     margin: 0 0 10px 20px;
   }
 
-  /*Formulario*/ /*! Resolver el problema de responsive hasta 576px en formulario*/
+  /*Formulario*/
 
   .form {
     width: 90vw;
