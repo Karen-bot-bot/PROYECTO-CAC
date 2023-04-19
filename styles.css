@@ -35,7 +35,7 @@
       #00000071 0%,
       rgba(0, 0, 0, 0.493) 100%
     ),
-    url(/img/ba1.jpg);
+    url(img/ba1.jpg);
   background-size: cover;
   background-position: center;
   padding: 0.1px;
@@ -180,7 +180,7 @@
   .text-f {
     font-size: 16px;
     margin-bottom: 0;
-    padding: 6px !important;
+    padding: 8px !important;
   }
 }
 
@@ -241,6 +241,7 @@
   .col {
     width: 22rem !important;
     margin: 0 auto;
+    padding-right: 0;
   }
 
   .card-img-top {
@@ -295,5 +296,9 @@
   .form-message {
     width: 100%;
     margin-right: 0;
+  }
+
+  .input {
+    padding: 10px;
   }
 }
